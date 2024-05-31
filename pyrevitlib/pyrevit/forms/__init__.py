@@ -2874,9 +2874,7 @@ def alert(msg, title=None, sub_msg=None, expanded=None, footer='',
     tdlg.ExpandedContent = expanded
     if footer:
         footer = footer.strip() + '\n'
-    tdlg.FooterText = footer + 'pyRevit {}'.format(
-        versionmgr.get_pyrevit_version().get_formatted()
-        )
+    tdlg.FooterText = footer
     tdlg.TitleAutoPrefix = False
 
     # set icon
